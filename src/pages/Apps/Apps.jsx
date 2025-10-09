@@ -23,9 +23,7 @@ const [allApps, setAllApps] = useState ([]);
         <h1 className='font-bold text-xl md:text-4xl text-[#001931] '>Trending Apps</h1>
         <p className='text-xs md:text-sm text-[#627382] p-2'>Explore All Trending Apps on the Market developed by us</p>
 
-    {/* <div>
-        <button className='btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white'>Show All</button> 
-    </div> */}
+
     </div>
    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 p-5'>
     {

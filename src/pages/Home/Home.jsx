@@ -5,7 +5,7 @@ import hero from "./../../assets/hero.png"
 import Downloadsign from "./../../assets/Downloadsign.png"
 import Star from "./../../assets/Star.png"
 import Apps from "../Apps/Apps"
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 
 
 
@@ -56,10 +56,12 @@ const Home = () => {
 </div>
         </div>
 
+ <Apps data={Array.isArray(data) ? data.slice(0, 8) : []}></Apps>
 
+        <div className='text-center p-10'>
+<Link to='/about'>        <button className='btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white'>Show All</button> </Link>
+    </div> 
 
-   
- <Apps data={data}></Apps>
         </div>
     );
 };

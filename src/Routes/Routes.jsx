@@ -1,6 +1,7 @@
 import React from 'react';
-import { createBrowserRouter, 
-   } from "react-router";
+
+ import { createBrowserRouter } from "react-router-dom";
+
 import Root from '../pages/Root/Root';
 import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Home from '../pages/Home/Home';
@@ -21,10 +22,12 @@ export const router = createBrowserRouter([
         },
         {
          path:'/about',
+         loader: ()=> fetch('AppsData.json'),
          Component:About
         },
         {
           path:'/appDetails/:id',
+          loader: ()=> fetch('/AppsData.json'),
           Component: AppDetails
         }
     ]

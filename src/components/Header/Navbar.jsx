@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "./../../assets/logo-navbar.png"
 import giticon from "./../../assets/Giticon.png"
-import { Link, Links } from 'react-router-dom';
+import { Link, Links, NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -20,9 +20,11 @@ const Navbar = () => {
         <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Installation</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">
+  
+  <Link to='/'>    <a className="btn btn-ghost text-xl bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">
        <img src={logo} alt="" /> 
-        HERO.IO</a>
+        HERO.IO</a></Link>
+
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
