@@ -7,6 +7,8 @@ import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
 import AppDetails from '../pages/AppDetails/AppDetails';
+import NotFound from '../pages/NotFound/NotFound';
+
 
 export const router = createBrowserRouter([
   {
@@ -16,21 +18,21 @@ export const router = createBrowserRouter([
     children: [
         {
             index: true,
-            loader: ()=> fetch('AppsData.json'),
+            loader: ()=> fetch('/AppsData.json'),
             path:"/", 
             Component: Home
         },
         {
          path:'/about',
-         loader: ()=> fetch('AppsData.json'),
+         loader: ()=> fetch('/AppsData.json'),
          Component:About
         },
         {
           path:'/appDetails/:id',
           loader: ()=> fetch('/AppsData.json'),
           Component: AppDetails
-        }
-    ]
-  },
-]);
+        }]},
+       {  
+        path: '*', Component: NotFound }  
+           ]);
 

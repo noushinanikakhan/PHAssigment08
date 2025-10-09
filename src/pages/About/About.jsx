@@ -1,14 +1,67 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import Downloadsign from "./../../assets/Downloadsign.png"
 // import Star from "./../../assets/Star.png";
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import App from '../App/App';
+import NotFound from '../NotFound/NotFound';
 
 
 
-const About = () =>{
 
-const data = useLoaderData ();
+
+const About = () => {
+  const data = useLoaderData();
+  const [query, setQuery] = useState('');
+  const [filteredApps, setFilteredApps] = useState([]);
+  const [hasSearched, setHasSearched] = useState(false);
+   const [showNotFound, setShowNotFound] = useState(false);
+
+  // Initialize filtered apps when data loads
+  useEffect(() => {
+    if (Array.isArray(data)) {
+    setFilteredApps(data);
+    setShowNotFound(false); 
+    }
+  }, [data]);
+
+  // Live search functionality
+  useEffect(() => {
+    if (!Array.isArray(data)) return;
+
+    const timer = setTimeout(() => {
+      const searchTerm = query.trim().toLowerCase();
+      setHasSearched(searchTerm.length > 0);
+      
+      if (searchTerm === '') {
+        // Show all apps when search is empty
+        setFilteredApps(data);
+        return;
+      }
+
+      // Filter apps by title (case-insensitive)
+      const filtered = data.filter(app =>
+        app.title.toLowerCase().includes(searchTerm)
+      );
+      
+    setFilteredApps(filtered);
+    setShowNotFound(filtered.length === 0 && searchTerm.length > 0); // ADD THIS
+
+    }, 300); // 300ms debounce delay
+
+    return () => clearTimeout(timer);
+  }, [query, data]);
+
+  const handleSearchChange = (e) => {
+    setQuery(e.target.value);
+  };
+
+  const clearSearch = () => {
+    setQuery('');
+    setHasSearched(false);
+    setShowNotFound(false); // ADD THIS
+
+  };
+
 
     return (
     <div className='p-10'>
@@ -17,7 +70,13 @@ const data = useLoaderData ();
         </div>
 
         <div className='flex items-center justify-between'>
-            <h1 className='font-bold text-xl text-[#001931]'>({Array.isArray(data) ? data.length : 0}) Apps Found</h1>
+            <h1 className='font-bold text-xl text-[#001931]'>({Array.isArray(filteredApps) ? filteredApps.length : 0}) Apps Found
+         {hasSearched && query && (
+            <span className="text-sm font-normal text-[#627382] ml-2">
+             
+            </span>
+          )}
+            </h1>
             <label className="input">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
@@ -31,16 +90,25 @@ const data = useLoaderData ();
       <path d="m21 21-4.3-4.3"></path>
     </g>
   </svg>
-  <input type="search" required placeholder="Search" />
+  <input type="search" required placeholder="Search"
+              value={query}
+            onChange={handleSearchChange}
+
+  />
 </label>
         </div>
 
+     {showNotFound && <NotFound />}
 
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 p-5'>
-    {
-     (Array.isArray(data)?data:[]).map((singleApp)=><App key={singleApp.id} singleApp={singleApp}></App>)
-    }
-       </div> 
+
+       {Array.isArray(filteredApps) && filteredApps.length > 0 && (
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 p-5'>
+          {filteredApps.map((singleApp) => (
+            <App key={singleApp.id} singleApp={singleApp}></App>
+          ))}
+        </div>
+      )}
+
     </div>
     );
 };

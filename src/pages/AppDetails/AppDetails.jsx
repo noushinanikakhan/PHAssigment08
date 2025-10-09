@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Downloadicon from "./../../assets/icon-downloads.png"
 import ratingsicon from "./../../assets/icon-ratings.png"
 import Review from "./../../assets/icon-review.png"
 import { useLoaderData, useParams } from 'react-router-dom';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+
+
+
+const MySwal = withReactContent(Swal)
 
 const AppDetails = () => {
 
@@ -14,6 +21,11 @@ const AppDetails = () => {
    const {image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings}= singleApp
 
    console.log(id)
+
+    const [isInstalled, setIsInstalled] = useState(false);
+
+    const handleInstall = () => {
+    setIsInstalled(true); };
 
     return (
     <div className='p-15 space-y-5'>
@@ -40,13 +52,56 @@ const AppDetails = () => {
                 <h1 className='font-bold text-4xl text-[#001931]'>{reviews}</h1>
             </div>
            </div>
-           <button className='btn bg-[#00D390] text-white font-bold text-xl'>Install Now ({size})</button>
+<button
+  onClick={()=>{
+     handleInstall();
+     if (!isInstalled) {  
+  Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Your app has been installed",
+  showConfirmButton: false,
+  timer: 1500
+});
+ }}}
+ 
+ disabled={isInstalled}
+  className={`btn font-bold text-xl ${
+    isInstalled
+      ? 'bg-[#00D390] text-white'
+      : 'bg-[#00D390] text-white hover:bg-[#00b377]'
+  }`}
+>
+  {isInstalled ? 'Installed': `Install Now (${size})`}
+</button>
+
         </div>
     </div>
 
    <div>
     <h1 className='font-bold text-xl text-[#001931]'>Ratings</h1>
+     
+     
+  <div className="h-64"> 
+    <ResponsiveContainer width="80%" height="100%">
+      <BarChart  layout="vertical"  width={300} height={40} data={ratings} 
+      margin={{ top: 20, right: 30, left: 60, bottom: 5 }}>
+
+    <XAxis type="number" />  
+      <YAxis 
+        type="category" 
+        dataKey="name"  
+        width={80}  
+      />
+        <Bar dataKey="count"  
+          fill="#FF8811" 
+          barSize={20}
+                 radius={[0, 4, 4, 0]}  
+ />
+      </BarChart>
+    </ResponsiveContainer>  
    </div>
+     </div> 
 
    <div>
     <h1 className='font-bold text-xl text-[#001931]'>Description</h1>

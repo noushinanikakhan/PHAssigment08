@@ -22,12 +22,17 @@ const Home = () => {
    <h1 className='font-bold text-4xl md:text-6xl text-[#001931]  text-center p-3'>We Build <br /> <span className='bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>Productive</span> Apps</h1>
    <p className='p-5 text-center text-[#627382]'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <span className='hidden md:inline '><br /></span> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
   <div className='gap-5 '>
-       <button className='btn m-5 text-[#001931] '>
+
+
+  <a href="https://play.google.com/store/apps/">     <button className='btn m-5 text-[#001931] '>
     <img className='py-4' src={Crome} alt="" />
     Google Play</button>
-    <button className='btn text-[#001931] '>
+  </a>
+
+<a href="https://www.apple.com/app-store/"> <button className='btn text-[#001931] '>
         <img className='py-4' src={Downloadappicon} alt="" />
-        App Store</button>
+        App Store</button></a>
+
   </div>
   <img className='w-5/12' src={hero} alt="" />
   </div>
