@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co/8mGf8rR/productivity.png",
+    "title": "TaskMaster",
+    "companyName": "PixelFlow Studios",
+    "id": 1,
+    "description": "TaskMaster is your ultimate productivity companion, designed to help you stay organized and reach your goals efficiently. With AI-powered reminders, calendar syncing, and smart task grouping, you can easily manage personal or team projects without losing focus.\n\nOur intelligent dashboard visualizes progress with charts and streak trackers, helping you prioritize tasks and improve time management. Whether you’re a student or professional, TaskMaster simplifies productivity and helps you achieve balance between work and life.",
+    "size": 56,
+    "reviews": 12500,
+    "ratingAvg": 4.6,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 890 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 7950 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Bz4X4yL/fitness.png",
+    "title": "FitTrack",
+    "companyName": "HealthSync Inc.",
+    "id": 2,
+    "description": "FitTrack brings all your fitness data into one place — workouts, nutrition, heart rate, and sleep — for a complete view of your health. Its intuitive interface allows you to log activities, monitor progress, and set realistic goals based on your fitness level.\n\nUsing advanced analytics, FitTrack provides insights and motivational reminders to keep you consistent. Integrated with wearable devices, it helps you understand your body’s rhythm and promotes a sustainable approach to wellness.",
+    "size": 48,
+    "reviews": 20400,
+    "ratingAvg": 4.8,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 610 },
+      { "name": "4 star", "count": 3900 },
+      { "name": "5 star", "count": 16000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/z6jV7Tm/weather.png",
+    "title": "SkyCast",
+    "companyName": "NimbusSoft",
+    "id": 3,
+    "description": "SkyCast delivers minute-by-minute weather updates with precision radar maps and satellite imagery. It uses global meteorological data combined with machine learning to forecast temperature, wind, and rainfall accurately in your exact location.\n\nFrom farmers to travelers, users trust SkyCast for reliable severe weather alerts and interactive visuals. With a sleek, customizable interface, it’s the perfect companion for planning your day around the elements.",
+    "size": 42,
+    "reviews": 9800,
+    "ratingAvg": 4.4,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3700 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/W2vDLB5/music.png",
+    "title": "SoundWave",
+    "companyName": "EchoVerse Media",
+    "id": 4,
+    "description": "SoundWave is a next-generation music platform where you can stream millions of songs, discover new artists, and create collaborative playlists. Its adaptive algorithm personalizes recommendations based on your listening mood and daily activities.\n\nEnjoy offline mode, crystal-clear audio, and live concerts streamed straight to your device. SoundWave bridges artists and fans, transforming how music is experienced in the digital era.",
+    "size": 60,
+    "reviews": 31000,
+    "ratingAvg": 4.7,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 8200 },
+      { "name": "5 star", "count": 19300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/0YhJ3Dk/camera.png",
+    "title": "SnapLens",
+    "companyName": "Visionary Labs",
+    "id": 5,
+    "description": "SnapLens redefines smartphone photography with AI-powered editing tools and next-gen camera filters. Capture every detail using its smart exposure adjustment and auto-stabilization features.\n\nWhether you’re creating portraits or travel vlogs, SnapLens enhances lighting, removes imperfections, and transforms your pictures into professional-grade visuals. Share instantly to social platforms or store your masterpieces securely in the cloud.",
+    "size": 75,
+    "reviews": 27700,
+    "ratingAvg": 4.5,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 720 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 14700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/hFyVnZp/finance.png",
+    "title": "BudgetEase",
+    "companyName": "FinGrow Tech",
+    "id": 6,
+    "description": "BudgetEase makes money management effortless by tracking your expenses and helping you set achievable saving goals. Its AI insights categorize your spending, so you understand where your money really goes.\n\nVisual charts, reminders, and smart notifications help you budget wisely and stay debt-free. Whether you’re planning a big purchase or saving for the future, BudgetEase empowers you with financial clarity.",
+    "size": 39,
+    "reviews": 13200,
+    "ratingAvg": 4.3,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 380 },
+      { "name": "2 star", "count": 520 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 6900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/s36D0PM/travel.png",
+    "title": "Tripster",
+    "companyName": "GlobalWay Travel",
+    "id": 7,
+    "description": "Tripster simplifies your adventures by combining trip planning, hotel booking, and social sharing in one app. Discover hidden gems with user-curated guides and budget optimization features.\n\nFrom solo travelers to group vacations, Tripster helps you manage itineraries, tickets, and recommendations seamlessly. Its offline maps and AI suggestions ensure you never miss a great spot — even without internet.",
+    "size": 68,
+    "reviews": 18600,
+    "ratingAvg": 4.7,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 270 },
+      { "name": "2 star", "count": 430 },
+      { "name": "3 star", "count": 910 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 10190 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/T1M9bRG/education.png",
+    "title": "StudyMate",
+    "companyName": "EduCore Systems",
+    "id": 8,
+    "description": "StudyMate turns learning into an engaging journey with gamified quizzes and smart flashcards. Its adaptive learning engine focuses on your weak areas to maximize improvement.\n\nStudents can form study groups, share notes, and compete for scores, making studying interactive and fun. From vocabulary drills to coding concepts, StudyMate adjusts to any subject or skill level.",
+    "size": 44,
+    "reviews": 15500,
+    "ratingAvg": 4.8,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 9950 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/2S6qrfB/security.png",
+    "title": "SafeNet",
+    "companyName": "CyberNova",
+    "id": 9,
+    "description": "SafeNet ensures your digital privacy through top-tier encryption, secure browsing, and VPN integration. Protect your data from hackers, trackers, and malicious ads.\n\nIts user-friendly dashboard provides real-time threat detection and automatic security audits. SafeNet gives you the confidence to surf, stream, and shop safely — anytime, anywhere.",
+    "size": 58,
+    "reviews": 8900,
+    "ratingAvg": 4.5,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3300 },
+      { "name": "5 star", "count": 4080 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/dQFw7cb/chat.png",
+    "title": "ChatterBox",
+    "companyName": "TalkFlow Apps",
+    "id": 10,
+    "description": "ChatterBox brings messaging, voice calls, and file sharing together with complete privacy. Built with real-time cloud sync, it ensures your chats are always up-to-date across all devices.\n\nCustom themes, animated stickers, and group tools make it fun to stay connected. Whether personal or professional, ChatterBox keeps conversations fast, secure, and expressive.",
+    "size": 63,
+    "reviews": 44000,
+    "ratingAvg": 4.6,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 1100 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 3600 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 25700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/yVvG1nW/health.png",
+    "title": "MindEase",
+    "companyName": "ZenCore Labs",
+    "id": 11,
+    "description": "MindEase guides you through meditation, relaxation, and mindfulness techniques for better focus and sleep. With mood tracking and soothing soundscapes, it’s your daily mental health companion.\n\nPersonalized programs adapt to your stress level and time availability, helping you develop lasting habits of calm and clarity. MindEase turns mindfulness into a lifestyle, not a task.",
+    "size": 41,
+    "reviews": 9600,
+    "ratingAvg": 4.9,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 6760 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Qbq0dmm/shop.png",
+    "title": "Shoply",
+    "companyName": "RetailEdge",
+    "id": 12,
+    "description": "Shoply revolutionizes online shopping by comparing prices across top stores and offering curated deals. Its smart engine highlights discounts based on your interests.\n\nWith one-click checkout, wishlist tracking, and real-time price alerts, Shoply makes bargain-hunting effortless. You’ll never miss another sale again.",
+    "size": 52,
+    "reviews": 21300,
+    "ratingAvg": 4.2,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 7400 },
+      { "name": "5 star", "count": 10200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/1v08tKp/news.png",
+    "title": "DailyScope",
+    "companyName": "InfoLink Media",
+    "id": 13,
+    "description": "DailyScope delivers curated news from trusted sources tailored to your reading habits. It combines AI filtering and human editorial oversight for balanced coverage.\n\nWhether you’re into global politics or entertainment, DailyScope keeps you informed with concise summaries, personalized notifications, and ad-free reading.",
+    "size": 47,
+    "reviews": 7300,
+    "ratingAvg": 4.1,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 2700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/ZHnYVyt/recipe.png",
+    "title": "CookCraft",
+    "companyName": "FlavorForge",
+    "id": 14,
+    "description": "CookCraft is your digital kitchen partner with thousands of recipes from around the world. It offers step-by-step guidance, ingredient substitutions, and portion adjustments.\n\nUsers can create shopping lists, save favorites, and share homemade recipes with the community. Cooking has never been simpler or more social.",
+    "size": 65,
+    "reviews": 16800,
+    "ratingAvg": 4.6,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 940 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 10130 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/PW9HrFf/game.png",
+    "title": "GalaxyRun",
+    "companyName": "NovaPlay Studios",
+    "id": 15,
+    "description": "GalaxyRun takes you on a fast-paced adventure through dynamic galaxies filled with challenges and rewards. Collect cosmic gems and unlock unique spaceships as you race against time.\n\nIts neon graphics and immersive soundtrack make each session thrilling. Compete with friends and climb leaderboards in this visually stunning space runner.",
+    "size": 90,
+    "reviews": 45200,
+    "ratingAvg": 4.8,
+    "downloads": 5600000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 11000 },
+      { "name": "5 star", "count": 29000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/6tzDXYk/photoedit.png",
+    "title": "PicMorph",
+    "companyName": "ImageTech",
+    "id": 16,
+    "description": "PicMorph transforms your photos into art using AI filters, portrait retouch, and tone mapping tools. Its intuitive editor makes professional-level results achievable for anyone.\n\nEnhance, crop, and stylize with one tap, or batch-edit entire galleries in seconds. Whether you’re an influencer or hobbyist, PicMorph gives your photos a creative edge.",
+    "size": 78,
+    "reviews": 31000,
+    "ratingAvg": 4.7,
+    "downloads": 3300000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 8500 },
+      { "name": "5 star", "count": 19400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/xLdjKH6/language.png",
+    "title": "LinguaPro",
+    "companyName": "PolyLearn Corp",
+    "id": 17,
+    "description": "LinguaPro makes mastering a new language engaging with interactive lessons and AI-driven conversation bots. Practice pronunciation, grammar, and vocabulary in real-world contexts.\n\nWith gamified progress tracking and native speaker audio, learning becomes natural and enjoyable. It’s the ideal app for students, travelers, or professionals expanding global communication skills.",
+    "size": 54,
+    "reviews": 28700,
+    "ratingAvg": 4.9,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 20600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/dDQwsgZ/calendar.png",
+    "title": "Planify",
+    "companyName": "OrgaFlow",
+    "id": 18,
+    "description": "Planify brings your tasks, calendar, and habits into one synchronized workspace. Manage daily routines with drag-and-drop scheduling and goal visualization.\n\nIt adapts to your workflow, offering recurring tasks, reminders, and focus timers. Planify is the ultimate digital planner for a balanced and productive life.",
+    "size": 46,
+    "reviews": 11900,
+    "ratingAvg": 4.4,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 6750 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/K7hmDrb/video.png",
+    "title": "StreamSpace",
+    "companyName": "ViewCast Media",
+    "id": 19,
+    "description": "StreamSpace offers ad-free video streaming with HD playback and community sharing. Enjoy entertainment without interruptions, personalized to your taste.\n\nUpload and monetize your own content while building an audience. StreamSpace empowers creators and viewers alike with freedom and quality streaming.",
+    "size": 88,
+    "reviews": 58000,
+    "ratingAvg": 4.3,
+    "downloads": 6000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 4400 },
+      { "name": "4 star", "count": 17500 },
+      { "name": "5 star", "count": 32500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Mf84NCC/map.png",
+    "title": "CityNav",
+    "companyName": "UrbanMotion",
+    "id": 20,
+    "description": "CityNav gives you offline maps, real-time traffic data, and step-by-step navigation optimized for urban explorers. Avoid congestion with AI-powered rerouting.\n\nFrom walking tours to highway drives, CityNav keeps you informed about road conditions, nearby services, and safety alerts — even without an internet connection.",
+    "size": 70,
+    "reviews": 23400,
+    "ratingAvg": 4.6,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 7800 },
+      { "name": "5 star", "count": 12600 }
+    ]
+  }
+]
