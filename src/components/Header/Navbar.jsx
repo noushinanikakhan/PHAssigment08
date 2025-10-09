@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "./../../assets/logo-navbar.png"
 import giticon from "./../../assets/Giticon.png"
+import { Link, Links } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -25,8 +26,10 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Home</a></li>
-      <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'> <a>Apps</a> </li>
+    <Link to='/'> <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Home</a></li></Link>
+      
+    <Link to='/about'><li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'> <a>Apps</a> </li></Link>
+
       <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Installation</a></li>
     </ul>
   </div>

@@ -5,10 +5,16 @@ import hero from "./../../assets/hero.png"
 import Downloadsign from "./../../assets/Downloadsign.png"
 import Star from "./../../assets/Star.png"
 import Apps from "../Apps/Apps"
+import { useLoaderData } from 'react-router';
 
 
 
 const Home = () => {
+
+  const data=useLoaderData();
+  console.log(data);
+
+
     return (
 
   <div> 
@@ -53,7 +59,7 @@ const Home = () => {
 
 
    
- <Apps></Apps>
+ <Apps data={data}></Apps>
         </div>
     );
 };
