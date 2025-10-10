@@ -28,7 +28,6 @@ const AppDetails = () => {
     const handleInstall = (id) => {
     setIsInstalled(true);
     addToStoredDB(id);
-        console.log("Installing app with ID:", id); // ADD THIS
 
   };
 
