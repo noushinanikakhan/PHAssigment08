@@ -65,19 +65,19 @@ const About = () => {
 
     return (
     <div className='p-10 bg-[#F1EFEF]'>
-        <div className='w-5/12 mx-auto p-3 text-center space-y-4 '><h1 className='font-bold text-4xl text-[#001931]'>Our All Applications</h1>
-        <p className='text-[#627382]'>Explore All Apps on the Market developed by us. We code for Millions</p>
+        <div className='w-5/12 mx-auto p-3 text-center space-y-4 '><h1 className='font-bold text-xl md:text-4xl text-[#001931]'>Our All Applications</h1>
+        <p className='text-[#627382] text-xs md:text-sm'>Explore All Apps on the Market developed by us. We code for Millions</p>
         </div>
 
         <div className='flex items-center justify-between'>
-            <h1 className='font-bold text-xl text-[#001931]'>({Array.isArray(filteredApps) ? filteredApps.length : 0}) Apps Found
+            <h1 className='font-bold text-xs md:text-xl text-[#001931]'>({Array.isArray(filteredApps) ? filteredApps.length : 0}) Apps Found
          {hasSearched && query && (
             <span className="text-sm font-normal text-[#627382] ml-2">
              
             </span>
           )}
             </h1>
-            <label className="input">
+            <label className="input w-32 md:w-auto">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
       strokeLinejoin="round"

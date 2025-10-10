@@ -6,6 +6,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+import { addToStoredDB } from '../../Utility/AddtoDB';
 
 
 
@@ -24,8 +25,12 @@ const AppDetails = () => {
 
     const [isInstalled, setIsInstalled] = useState(false);
 
-    const handleInstall = () => {
-    setIsInstalled(true); };
+    const handleInstall = (id) => {
+    setIsInstalled(true);
+    addToStoredDB(id);
+        console.log("Installing app with ID:", id); // ADD THIS
+
+  };
 
     return (
     <div className='p-15 space-y-5 bg-[#F1EFEF]'>
@@ -54,7 +59,7 @@ const AppDetails = () => {
            </div>
 <button
   onClick={()=>{
-     handleInstall();
+     handleInstall(id);
      if (!isInstalled) {  
   Swal.fire({
   position: "top-end",
@@ -85,7 +90,7 @@ const AppDetails = () => {
   <div className="h-64"> 
     <ResponsiveContainer width="80%" height="100%">
       <BarChart  layout="vertical"  width={300} height={40} data={ratings} 
-      margin={{ top: 20, right: 30, left: 60, bottom: 5 }}>cd "C:\PH Assignments\PHAssignment08\assignment08"
+      margin={{ top: 20, right: 30, left: 60, bottom: 5 }}>
 
 
     <XAxis type="number" />  

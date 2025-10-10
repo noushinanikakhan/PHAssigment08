@@ -1,10 +1,13 @@
 import React from 'react';
 import logo from "./../../assets/logo-navbar.png"
 import giticon from "./../../assets/Giticon.png"
-import { Link, Links, NavLink } from 'react-router-dom';
+import { Link, Links, NavLink, useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
+
+    const location = useLocation(); // ADD THIS
+
     return (
    <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
@@ -28,11 +31,11 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-    <Link to='/'> <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Home</a></li></Link>
+    <Link to='/' className={`${location.pathname === '/' ? 'text-purple-600 border-b-2 border-purple-600': ''}`}> <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Home</a></li></Link>
       
-    <Link to='/about'><li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'> <a>Apps</a> </li></Link>
+    <Link to='/about' className={`${location.pathname === '/about' ? 'text-purple-600 border-b-2 border-purple-600' : ''}`}><li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'> <a>Apps</a> </li></Link>
 
-    <Link to='/installation'> <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Installation</a></li></Link> 
+    <Link to='/installation'  className={`${location.pathname === '/installation' ? 'text-purple-600 border-b-2 border-purple-600' : ''}`}> <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Installation</a></li></Link> 
 
     </ul>
   </div>
