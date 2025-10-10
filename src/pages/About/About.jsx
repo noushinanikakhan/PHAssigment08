@@ -5,11 +5,6 @@ import { Link, useLoaderData } from 'react-router';
 import App from '../App/App';
 import NotFound from '../NotFound/NotFound';
 
-
-
-
-
-
 const About = () => {
   const data = useLoaderData();
   const [query, setQuery] = useState('');
@@ -18,21 +13,19 @@ const About = () => {
   const [showNotFound, setShowNotFound] = useState(false);
   const [searchLoading, setSearchLoading] = useState(false); 
 
-  // Initialize filtered apps when data loads
   useEffect(() => {
     if (Array.isArray(data)) {
     setFilteredApps(data);
     setShowNotFound(false);
-    setSearchLoading(false); // ADD THIS LINE - STOP LOADING
-
+    setSearchLoading(false); 
     }
   }, [data]);
 
-  // Live search functionality
+
   useEffect(() => {
     if (!Array.isArray(data)) return;
 
-      setSearchLoading(true); // ADD THIS LINE - START LOADING
+      setSearchLoading(true); 
 
 
     const timer = setTimeout(() => {
@@ -40,14 +33,14 @@ const About = () => {
       setHasSearched(searchTerm.length > 0);
       
       if (searchTerm === '') {
-        // Show all apps when search is empty
+      
         setFilteredApps(data);
         setSearchLoading(false);
 
         return;
       }
 
-      // Filter apps by title (case-insensitive)
+    
       const filtered = data.filter(app =>
         app.title.toLowerCase().includes(searchTerm)
       );
@@ -55,9 +48,9 @@ const About = () => {
     setFilteredApps(filtered);
     setShowNotFound(filtered.length === 0 && searchTerm.length > 0);
     setSearchLoading(false);
-// ADD THIS
 
-    }, 300); // 300ms debounce delay
+
+    }, 300); 
 
     return () => clearTimeout(timer);
   }, [query, data]);
@@ -69,7 +62,7 @@ const About = () => {
   const clearSearch = () => {
     setQuery('');
     setHasSearched(false);
-    setShowNotFound(false); // ADD THIS
+    setShowNotFound(false); 
     setSearchLoading(false);
 
   };
