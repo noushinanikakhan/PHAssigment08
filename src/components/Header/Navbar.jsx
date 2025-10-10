@@ -32,7 +32,8 @@ const Navbar = () => {
       
     <Link to='/about'><li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'> <a>Apps</a> </li></Link>
 
-      <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Installation</a></li>
+    <Link to='/installation'> <li className='text-black hover:bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:text-transparent hover:bg-clip-text'><a>Installation</a></li></Link> 
+
     </ul>
   </div>
   <div className="navbar-end">

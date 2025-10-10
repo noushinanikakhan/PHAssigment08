@@ -64,7 +64,7 @@ const About = () => {
 
 
     return (
-    <div className='p-10'>
+    <div className='p-10 bg-[#F1EFEF]'>
         <div className='w-5/12 mx-auto p-3 text-center space-y-4 '><h1 className='font-bold text-4xl text-[#001931]'>Our All Applications</h1>
         <p className='text-[#627382]'>Explore All Apps on the Market developed by us. We code for Millions</p>
         </div>

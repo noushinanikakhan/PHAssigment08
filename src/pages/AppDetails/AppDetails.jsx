@@ -28,10 +28,10 @@ const AppDetails = () => {
     setIsInstalled(true); };
 
     return (
-    <div className='p-15 space-y-5'>
+    <div className='p-15 space-y-5 bg-[#F1EFEF]'>
         
-    <div className='flex gap-5'>
-        <img src={image} className='w-48' alt="" />
+    <div className='flex gap-10'>
+        <img src={image} className='w-48 bg-white' alt="" />
         <div className='space-y-4'>
             <h1 className='font-bold text-4xl text-[#001931]'>{title}</h1>
             <p className='font-bold text-[#627382]'>Developed by <span className='bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>{companyName}</span></p>
@@ -85,7 +85,8 @@ const AppDetails = () => {
   <div className="h-64"> 
     <ResponsiveContainer width="80%" height="100%">
       <BarChart  layout="vertical"  width={300} height={40} data={ratings} 
-      margin={{ top: 20, right: 30, left: 60, bottom: 5 }}>
+      margin={{ top: 20, right: 30, left: 60, bottom: 5 }}>cd "C:\PH Assignments\PHAssignment08\assignment08"
+
 
     <XAxis type="number" />  
       <YAxis 

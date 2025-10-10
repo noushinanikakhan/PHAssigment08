@@ -1,7 +1,9 @@
 import React from 'react';
 import ErrorApp from "./../../assets/App-Error.png";
 import About from '../About/About';
-import { useNavigate, Link } from 'react-router-dom'; // ADD Link import
+import { useNavigate, Link } from 'react-router-dom'; 
+import Footer from '../../components/Footer/Footer';
+import Navbar from '../../components/Header/Navbar';
 
 
 const NotFound = () => {
