@@ -76,7 +76,7 @@ const AppDetails = () => {
       : 'bg-[#00D390] text-white hover:bg-[#00b377]'
   }`}
 >
-  {isInstalled ? 'Installed': `Install Now (${size})`}
+  {isInstalled ? 'Installed': `Install Now ${size} MB`}
 </button>
 
         </div>
