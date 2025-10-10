@@ -9,24 +9,31 @@ import NotFound from '../NotFound/NotFound';
 
 
 
+
 const About = () => {
   const data = useLoaderData();
   const [query, setQuery] = useState('');
   const [filteredApps, setFilteredApps] = useState([]);
   const [hasSearched, setHasSearched] = useState(false);
-   const [showNotFound, setShowNotFound] = useState(false);
+  const [showNotFound, setShowNotFound] = useState(false);
+  const [searchLoading, setSearchLoading] = useState(false); 
 
   // Initialize filtered apps when data loads
   useEffect(() => {
     if (Array.isArray(data)) {
     setFilteredApps(data);
-    setShowNotFound(false); 
+    setShowNotFound(false);
+    setSearchLoading(false); // ADD THIS LINE - STOP LOADING
+
     }
   }, [data]);
 
   // Live search functionality
   useEffect(() => {
     if (!Array.isArray(data)) return;
+
+      setSearchLoading(true); // ADD THIS LINE - START LOADING
+
 
     const timer = setTimeout(() => {
       const searchTerm = query.trim().toLowerCase();
@@ -35,6 +42,8 @@ const About = () => {
       if (searchTerm === '') {
         // Show all apps when search is empty
         setFilteredApps(data);
+        setSearchLoading(false);
+
         return;
       }
 
@@ -44,7 +53,9 @@ const About = () => {
       );
       
     setFilteredApps(filtered);
-    setShowNotFound(filtered.length === 0 && searchTerm.length > 0); // ADD THIS
+    setShowNotFound(filtered.length === 0 && searchTerm.length > 0);
+    setSearchLoading(false);
+// ADD THIS
 
     }, 300); // 300ms debounce delay
 
@@ -59,6 +70,7 @@ const About = () => {
     setQuery('');
     setHasSearched(false);
     setShowNotFound(false); // ADD THIS
+    setSearchLoading(false);
 
   };
 
@@ -69,6 +81,8 @@ const About = () => {
         <p className='text-[#627382] text-xs md:text-sm'>Explore All Apps on the Market developed by us. We code for Millions</p>
         </div>
 
+
+    
         <div className='flex items-center justify-between'>
             <h1 className='font-bold text-xs md:text-xl text-[#001931]'>({Array.isArray(filteredApps) ? filteredApps.length : 0}) Apps Found
          {hasSearched && query && (
@@ -98,10 +112,16 @@ const About = () => {
 </label>
         </div>
 
-     {showNotFound && <NotFound />}
+        {searchLoading && (
+        <div className="flex justify-center items-center py-8">
+          <span className="loading loading-dots loading-xl"></span>
+        </div>
+      )}
+
+     {showNotFound && !searchLoading && <NotFound />}
 
 
-       {Array.isArray(filteredApps) && filteredApps.length > 0 && (
+       {!searchLoading && Array.isArray(filteredApps) && filteredApps.length > 0 && (
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 p-5'>
           {filteredApps.map((singleApp) => (
             <App key={singleApp.id} singleApp={singleApp}></App>
