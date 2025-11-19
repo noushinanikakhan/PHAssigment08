@@ -65,8 +65,7 @@ CompanyName: FinGrow Tech
 
       
 9. SafeNet
-    CompanyName: CyberNova
-  
+    CompanyName: CyberNova  
     Description:  SafeNet ensures your digital privacy through top-tier encryption, secure browsing, and VPN integration. Protect your data from hackers, trackers, and malicious ads.\n\nIts user-friendly dashboard provides real-time threat detection and automatic security audits. SafeNet gives you the confidence to surf, stream, and shop safely — anytime, anywhere.
    Size: 58 MB
      Reviews: 8900
@@ -131,7 +130,6 @@ CompanyName: FinGrow Tech
 
   17. LinguaPro
     CompanyName: PolyLearn Corp
-
     Description:  LinguaPro makes mastering a new language engaging with interactive lessons and AI-driven conversation bots. Practice pronunciation, grammar, and vocabulary in real-world contexts.\n\nWith gamified progress tracking and native speaker audio, learning becomes natural and enjoyable. It’s the ideal app for students, travelers, or professionals expanding global communication skills.
   Size: 54 MB
     Reviews: 28700
