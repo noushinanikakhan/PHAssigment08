@@ -2,10 +2,6 @@
 
 A modern web application for discovering and exploring mobile applications with detailed information, ratings, and installation guides.
 
-## 🚀 Live Demo
-
-[Live Site Link]() <!-- Add your deployment link here -->
-
 ## 📖 Description
 
 HERO.IO is a full-stack web application built with React that serves as a comprehensive app discovery platform. Users can browse through a curated collection of mobile applications, view detailed information about each app, check ratings and reviews, and save their favorite apps for quick access. The platform features a clean, responsive design with intuitive navigation.
@@ -172,6 +168,7 @@ This project is open source and available under the MIT License.
 
 ## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
+
 
    
 
