@@ -49,7 +49,6 @@ src/
 ├── assets/ # Images and static files
 └── Routes/ # Application routing configuration
 
-text
 
 ## 📦 Dependencies
 
@@ -64,40 +63,44 @@ text
   "sweetalert2": "^11.25.0",
   "sweetalert2-react-content": "^5.1.0"
 }
-Dev Dependencies
-json
+```
+
+### Dev Dependencies
+```json
 {
   "@types/react": "^19.1.16",
+  
   "@types/react-dom": "^19.1.9",
   "@vitejs/plugin-react": "^5.0.4",
   "eslint": "^9.36.0",
   "vite": "^7.1.7",
   "tailwindcss": "^3.4.0"
 }
-🚀 Getting Started
-Prerequisites
-Node.js (version 18 or higher recommended)
+```
+## 🚀 Getting Started
+### Prerequisites 
 
+Node.js (version 18 or higher recommended)
 npm or yarn package manager
 
-Installation & Local Development
-Clone the repository
-
-bash
+## Installation & Local Development
+1. Clone the repository
+```bash
 git clone <your-repository-url>
 cd assignment08
-Install dependencies
-
-bash
+```
+2. Install dependencies
+```bash
 npm install
-Start the development server
-
-bash
+```
+3. Start the development server
+```bash
 npm run dev
-Open your browser
-Navigate to http://localhost:5173 (or the port shown in your terminal)
+```
+4. Open your browser
+   Navigate to http://localhost:5173 (or the port shown in your terminal)
 
-Available Scripts
+### Available Scripts
 npm run dev - Start development server
 
 npm run build - Build for production
@@ -106,8 +109,8 @@ npm run preview - Preview production build
 
 npm run lint - Run ESLint for code quality
 
-🎯 Key Components
-Routing
+## 🎯 Key Components
+### Routing
 The application uses React Router for navigation with the following routes:
 
 / - Homepage with app listings
@@ -120,14 +123,14 @@ The application uses React Router for navigation with the following routes:
 
 /notfound - 404 error page
 
-Data Management
+### Data Management
 Local Storage: Saves user's favorite apps using browser localStorage
 
 JSON Data: App information stored in AppsData.json
 
 State Management: React hooks for local state management
 
-Features Implementation
+### Features Implementation
 Dynamic Routing: Parameter-based routing for app details
 
 Data Loading: Efficient data fetching with React Router loaders
@@ -136,7 +139,7 @@ Responsive UI: Tailwind CSS for mobile-first design
 
 Interactive Elements: SweetAlert2 for user feedback
 
-🌟 Sample Apps Included
+## 🌟 Sample Apps Included
 The platform features 20 diverse applications including:
 
 TaskMaster - Productivity app
@@ -153,7 +156,7 @@ MindEase - Mental wellness
 
 And many more...
 
-🔧 Build & Deployment
+## 🔧 Build & Deployment
 The project is configured with Vite for optimal build performance:
 
 Fast Hot Module Replacement (HMR)
@@ -162,9 +165,17 @@ Optimized production builds
 
 Efficient asset handling
 
-📝 License
+## 📝 License
 This project is open source and available under the MIT License.
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+   
+
+
+
+
+
+
 
