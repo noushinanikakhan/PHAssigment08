@@ -36,6 +36,8 @@ HERO.IO is a full-stack web application built with React that serves as a compre
 - **🔔 User Notifications**: Beautiful alert system with SweetAlert2
 
 ## 📁 Project Structure
+```
+text
 src/
 ├── pages/
 │ ├── Root/ # Main layout component
@@ -48,7 +50,7 @@ src/
 ├── components/ # Reusable components
 ├── assets/ # Images and static files
 └── Routes/ # Application routing configuration
-
+```
 
 ## 📦 Dependencies
 
